@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">All in One News</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="bbc">BBC</string>
+    <string name="abp_news">ABP News</string>
+    <string name="cnn">CNN</string>
+    <string name="fox">Fox</string>
+    <string name="sky_news">Sky News</string>
+    <string name="india_news">India News</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aajtak">AajTak</string>
+    <string name="indiatv_news">IndiaTV News</string>
+    <string name="tv9_marathi">TV9 Marathi</string>
+    <string name="zee_news">ZEE News</string>
+    <string name="about_us">About Us</string>
+
+    <string name="app_description">This Android Application is a project-based App. These Apps main features are including all news Media or channels networking. Gives the client an easy way to All  Medium and channels to read and watch the news in one app.</string>
+</resources>

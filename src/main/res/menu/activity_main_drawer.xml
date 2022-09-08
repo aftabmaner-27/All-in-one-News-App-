@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/bbc"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="@string/abp_news"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="@string/aajtak"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/nav_TV9_news"
+            android:title="@string/tv9_marathi"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/nav_Zeenews"
+            android:title="@string/zee_news"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/nav_IndiaTv"
+            android:title="@string/indiatv_news"
+            android:menuCategory="secondary"/>
+
+    </group>
+
+    <item android:title="App Info"
+        android:menuCategory="secondary">
+
+        <menu>
+            <item
+                android:id="@+id/AboutUs"
+                android:title="@string/about_us"
+                android:menuCategory="secondary">
+
+            </item>
+        </menu>
+    </item>
+
+</menu>

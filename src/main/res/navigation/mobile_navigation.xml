@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.aftabmaner.mynews.ui.BBC.BBCFragment"
+        android:label="@string/bbc"
+        tools:layout="@layout/fragment_bbc_news" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.aftabmaner.mynews.ui.ABP_News.ABPNewsFragment"
+        android:label="@string/abp_news"
+        tools:layout="@layout/fragment_abp_news" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.aftabmaner.mynews.ui.AAJTak_News.AajTakFragment"
+        android:label="@string/aajtak"
+        tools:layout="@layout/fragment_aajtak_news" />
+
+    <fragment
+        android:id="@+id/nav_IndiaTv"
+        android:name="com.aftabmaner.mynews.ui.IndiaTV_News.IndiaTVFragment"
+        android:label="@string/indiatv_news"
+        tools:layout="@layout/fragment_india_t_v" />
+
+    <fragment
+        android:id="@+id/nav_TV9_news"
+        android:name="com.aftabmaner.mynews.ui.TV9_News.TV9MarathiFragment"
+        android:label="@string/tv9_marathi"
+        tools:layout="@layout/fragment_t_v9_marathi" />
+
+    <fragment
+        android:id="@+id/nav_Zeenews"
+        android:name="com.aftabmaner.mynews.ui.Zee_News.ZeeNewsFragment"
+        android:label="@string/zee_news"
+        tools:layout="@layout/fragment_zee_news" />
+    <fragment
+        android:id="@+id/AboutUs"
+        android:name="com.aftabmaner.mynews.AboutUsFragment"
+        android:label="@string/about_us"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>
