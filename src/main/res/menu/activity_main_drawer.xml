@@ -27,6 +27,9 @@
             android:id="@+id/nav_IndiaTv"
             android:title="@string/indiatv_news"
             android:menuCategory="secondary"/>
+        <item android:id="@+id/nav_shamtv"
+            android:title="@string/sham_tv"
+            android:menuCategory="secondary"/>
 
     </group>
 

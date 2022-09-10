@@ -34,7 +34,11 @@
         android:name="com.aftabmaner.mynews.ui.TV9_News.TV9MarathiFragment"
         android:label="@string/tv9_marathi"
         tools:layout="@layout/fragment_t_v9_marathi" />
-
+    <fragment
+        android:id="@+id/nav_shamtv"
+        android:name="com.aftabmaner.mynews.ui.ShamTV.ShamTvFragment"
+        android:label="@string/sham_tv"
+        tools:layout="@layout/fragment_sham_tv" />
     <fragment
         android:id="@+id/nav_Zeenews"
         android:name="com.aftabmaner.mynews.ui.Zee_News.ZeeNewsFragment"
