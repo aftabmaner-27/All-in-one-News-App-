@@ -29,11 +29,18 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="389dp"
+        android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:text="This Android Application is a project-based App. These Apps' main features are including all news Media or channels networking. Gives the client an easy way to All  Medium and channels to read and watch the news in one app."
         android:textColor="@color/black"
         android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
 
     <TextView
         android:id="@+id/textView4"
@@ -43,4 +50,5 @@
         android:text="Developer: © Aftab Maner"
         android:textColor="@color/black"
         android:textStyle="bold" />
+    </LinearLayout>
 </LinearLayout>

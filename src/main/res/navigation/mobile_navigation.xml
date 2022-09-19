@@ -49,4 +49,11 @@
         android:name="com.aftabmaner.mynews.AboutUsFragment"
         android:label="@string/about_us"
         tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/nav_aplibaramatinews"
+        android:name="com.aftabmaner.mynews.ui.ApliBaramati_News.ApliBaramatiNewsFragment"
+        android:label="@string/apli_baramati"
+        tools:layout="@layout/fragment_apli_baramati_news"/>
+
+
 </navigation>

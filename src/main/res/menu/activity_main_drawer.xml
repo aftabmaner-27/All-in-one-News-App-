@@ -7,6 +7,10 @@
             android:id="@+id/nav_home"
             android:title="@string/bbc"
             android:menuCategory="secondary"/>
+
+        <item android:id="@+id/nav_aplibaramatinews"
+            android:title="@string/apli_baramati"
+            android:menuCategory="secondary"/>
         <item
             android:id="@+id/nav_gallery"
             android:title="@string/abp_news"

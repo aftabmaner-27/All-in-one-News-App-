@@ -1,8 +1,11 @@
 package com.aftabmaner.mynews;
 
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.Menu;
 
+import com.aftabmaner.mynews.NetworkUtility.NetworkChangeListner;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
@@ -15,6 +18,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.aftabmaner.mynews.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+
+    NetworkChangeListner networkChangeListner = new NetworkChangeListner();
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
@@ -32,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_TV9_news, R.id.nav_Zeenews)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_TV9_news, R.id.nav_Zeenews,R.id.nav_aplibaramatinews,R.id.nav_IndiaTv,R.id.nav_shamtv)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -52,5 +57,18 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    protected void onStart() {
+        IntentFilter filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        registerReceiver(networkChangeListner,filter);
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        unregisterReceiver(networkChangeListner);
+        super.onStop();
     }
 }
